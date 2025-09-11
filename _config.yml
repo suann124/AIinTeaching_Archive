@@ -1,0 +1,40 @@
+# Book settings
+title: "Interactive Control Lab"
+author: "Su Ann Low"
+only_build_toc_files: true
+
+# add or merge these keys
+parse:
+  myst_enable_extensions:
+    - amsmath      # enables \[ ... \], \( ... \), and math directives
+    - dollarmath   # enables $$ ... $$ and $ ... $ math
+
+# HTML options
+html:
+  html_math_renderer: mathjax  # (default, but explicit is nice)
+  extra_footer: |
+    <!-- Chat widget container (fill via extra_js if you add a widget later) -->
+    <div id="chat-root"></div>
+  extra_css:
+    - _static/chat.css
+  extra_js:
+    - _static/chat.js
+    - _static/inverted-pendulum.js
+
+# Execution options
+execute:
+  execute_notebooks: "cache"
+  cache: ""
+
+# Thebe configuration for interactive code
+launch_buttons:
+  thebe: true
+
+repository:
+  url: https://github.com/binder-examples/requirements  
+  branch: master
+
+sphinx:
+  config:
+    html_js_files:
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js

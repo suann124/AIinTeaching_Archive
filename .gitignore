@@ -1,0 +1,27 @@
+# Jupyter Book build output
+_build/
+
+# Jupyter cache
+.jupyter_cache/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log

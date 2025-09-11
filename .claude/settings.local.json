@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Read(//Users/suann/Library/Containers/com.apple.Stickies/Data/Library/Stickies/6F813FFE-FB8E-4DA5-BE2C-F99BEA7169DC.rtfd/**)",
+      "Read(//Users/suann/Desktop/Stickies/**)",
+      "Bash(jupyter-book build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

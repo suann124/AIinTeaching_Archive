@@ -1,0 +1,361 @@
+/* Thebe Interactive Code Styling - Ultra Specific to Override Defaults */
+
+/* Keep original styling for default code blocks - don't override anything for INACTIVE blocks */
+/* Only style ACTIVE .thebe-cell blocks */
+
+/* FORCE WHITE BACKGROUND AND DARK TEXT FOR ALL THEBE CELLS */
+/* Multiple selectors to catch all possible Thebe variations */
+
+/* Active Thebe cell styling - GREEN border ONLY when Thebe is active */
+body.thebe-active .thebe-cell .highlight,
+body.thebe-active div.thebe-cell .highlight,
+body.thebe-active .cell.thebe-cell .highlight {
+    border: 2px solid #28a745 !important;
+    border-radius: 4px !important;
+}
+
+body.thebe-active .thebe-cell .highlight pre,
+body.thebe-active div.thebe-cell .highlight pre,
+body.thebe-active .cell.thebe-cell .highlight pre {
+    color: #ffffff !important;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+}
+
+/* CodeMirror editor styling - SIMPLE border with WHITE text ONLY when active */
+body.thebe-active .thebe-cell .CodeMirror,
+body.thebe-active div.thebe-cell .CodeMirror,
+body.thebe-active .cell.thebe-cell .CodeMirror,
+body.thebe-active .thebe-cell div.CodeMirror,
+body.thebe-active .jp-CodeCell .CodeMirror,
+body.thebe-active .code_cell .CodeMirror {
+    color: #ffffff !important;
+}
+
+body.thebe-active .thebe-cell .CodeMirror .CodeMirror-code,
+body.thebe-active .thebe-cell .CodeMirror-code,
+body.thebe-active div.thebe-cell .CodeMirror .CodeMirror-code {
+    color: #ffffff !important;
+}
+
+body.thebe-active .thebe-cell .CodeMirror .CodeMirror-line,
+body.thebe-active .thebe-cell .CodeMirror-line,
+body.thebe-active div.thebe-cell .CodeMirror .CodeMirror-line {
+    color: #ffffff !important;
+}
+
+body.thebe-active .thebe-cell .CodeMirror-lines,
+body.thebe-active div.thebe-cell .CodeMirror-lines {
+    color: #ffffff !important;
+}
+
+/* Force base CodeMirror text to be white, but allow syntax highlighting to override */
+body.thebe-active .thebe-cell .CodeMirror,
+body.thebe-active div.thebe-cell .CodeMirror,
+body.thebe-active .cell.thebe-cell .CodeMirror {
+    color: #ffffff;
+}
+
+/* Only target spans that are NOT syntax highlighted */
+body.thebe-active .thebe-cell .CodeMirror .CodeMirror-line span:not([class*="cm-"]),
+body.thebe-active .thebe-cell .CodeMirror-line span:not([class*="cm-"]),
+body.thebe-active div.thebe-cell .CodeMirror .CodeMirror-line span:not([class*="cm-"]) {
+    color: #ffffff !important;
+}
+
+/* Force white text only for non-syntax elements */
+body.thebe-active .thebe-cell .CodeMirror pre:not([class*="cm-"]),
+body.thebe-active .thebe-cell .CodeMirror .cm-s-default:not([class*="cm-"]) {
+    color: #ffffff !important;
+}
+
+/* BASE TEXT COLOR - Only for unstyled elements */
+.thebelab-cell .CodeMirror,
+.thebe-cell.thebe-running .CodeMirror,
+.cell.thebe-active .CodeMirror,
+.thebe-cell[data-kernel-name] .CodeMirror,
+.cm-editor {
+    color: #ffffff;
+}
+
+/* PROPER CodeMirror Syntax Highlighting - Target cm-editor and specific token classes */
+/* Based on research: CodeMirror elements have regular CSS class names with cm-editor as outer element */
+
+/* Python Keywords */
+.cm-editor .cm-keyword { color: #ff79c6 !important; }
+
+/* Strings */
+.cm-editor .cm-string { color: #f1fa8c !important; }
+
+/* Comments */
+.cm-editor .cm-comment { color: #6272a4 !important; }
+
+/* Numbers */
+.cm-editor .cm-number { color: #bd93f9 !important; }
+
+/* Operators */
+.cm-editor .cm-operator { color: #ff79c6 !important; }
+
+/* Built-ins */
+.cm-editor .cm-builtin { color: #8be9fd !important; }
+
+/* Function definitions */
+.cm-editor .cm-def { color: #50fa7b !important; }
+
+/* Variables - keep white as base */
+.cm-editor .cm-variable { color: #f8f8f2 !important; }
+
+/* Property access */
+.cm-editor .cm-property { color: #50fa7b !important; }
+
+/* Atom/null/boolean */
+.cm-editor .cm-atom { color: #bd93f9 !important; }
+
+/* Brackets and punctuation */
+.cm-editor .cm-bracket { color: #f8f8f2 !important; }
+
+/* Alternative targeting for older CodeMirror versions */
+.CodeMirror .cm-keyword { color: #ff79c6 !important; }
+.CodeMirror .cm-string { color: #f1fa8c !important; }
+.CodeMirror .cm-comment { color: #6272a4 !important; }
+.CodeMirror .cm-number { color: #bd93f9 !important; }
+.CodeMirror .cm-operator { color: #ff79c6 !important; }
+.CodeMirror .cm-builtin { color: #8be9fd !important; }
+.CodeMirror .cm-def { color: #50fa7b !important; }
+.CodeMirror .cm-variable { color: #f8f8f2 !important; }
+.CodeMirror .cm-property { color: #50fa7b !important; }
+.CodeMirror .cm-atom { color: #bd93f9 !important; }
+
+body.thebe-active .thebe-cell .CodeMirror-cursor {
+    border-left: 2px solid #28a745 !important;
+}
+
+body.thebe-active .thebe-cell .CodeMirror-focused {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+body.thebe-active .thebe-cell .CodeMirror-selected {
+    background-color: rgba(40, 167, 69, 0.1) !important;
+}
+
+/* Status messages */
+.thebe-status {
+    background-color: #d4edda !important;
+    border: 1px solid #c3e6cb !important;
+    color: #155724 !important;
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    margin: 10px 0 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+.thebe-status.loading {
+    background-color: #fff3cd !important;
+    border-color: #ffeaa7 !important;
+    color: #856404 !important;
+}
+
+/* Button improvements */
+.btn-launch-thebe {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.btn-launch-thebe:hover {
+    background-color: #218838 !important;
+    border-color: #1e7e34 !important;
+    color: white !important;
+}
+
+.btn-launch-thebe:active {
+    background-color: #1e7e34 !important;
+    border-color: #1c7430 !important;
+}
+
+/* Toggle indicator for active state */
+body.thebe-active .btn-launch-thebe::before {
+    content: "🟢 ";
+}
+
+body.thebe-active .btn-launch-thebe .btn__text-container::after {
+    content: " (Active)";
+}
+
+/* AI Chat Widget Styles - Dark Theme */
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: #2b2b2b;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    color: #e0e0e0;
+}
+
+.chat-widget.open {
+    display: flex;
+}
+
+.chat-header {
+    background: #2196F3;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.chat-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #1e1e1e;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    color: #e0e0e0;
+}
+
+.chat-message.user {
+    background: #0d47a1;
+    color: #ffffff;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chat-message.assistant {
+    background: #424242;
+    color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.chat-input-container {
+    padding: 15px;
+    border-top: 1px solid #555;
+    display: flex;
+    gap: 10px;
+    background: #2b2b2b;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.chat-input::placeholder {
+    color: #888;
+}
+
+.chat-send {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-send:hover {
+    background: #1976D2;
+}
+
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.chat-toggle:hover {
+    background: #1976D2;
+}
+
+.chat-widget.open + .chat-toggle {
+    display: none;
+}
+
+/* Quick actions */
+.chat-quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 15px;
+    border-top: 1px solid #555;
+    background: #2b2b2b;
+}
+
+.quick-action {
+    background: #424242;
+    border: 1px solid #666;
+    color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.quick-action:hover {
+    background: #555;
+    border-color: #888;
+}
+
+/* Model selector styling */
+#modelSelect {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+#modelSelect option {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
