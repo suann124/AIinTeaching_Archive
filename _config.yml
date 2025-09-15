@@ -29,12 +29,31 @@ execute:
 # Thebe configuration for interactive code
 launch_buttons:
   thebe: true
+  binderhub_url: https://mybinder.org
+  notebook_interface: jupyterlab   # optional
 
+# (Optional) extra Thebe tuning; safe defaults
+thebe:
+  always_load: false        # page-level `{code-cell} thebe-button` still works
+  use_thebe_lite: false
+
+# --- Repo info (used for "Edit on GitHub", Binder, etc.) ---
 repository:
-  url: https://github.com/binder-examples/requirements  
-  branch: master
+  url: https://github.com/suann124/AIinTeaching
+  branch: main              # or your default branch
+  path_to_book: .           # adjust if the book lives in a subfolder
 
+# --- Sphinx tweaks ---
 sphinx:
   config:
-    html_js_files:
-      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    # Jupyter Book already handles RequireJS where needed; avoid double-including.
+    html_js_files: []
+
+#repository:
+#  url: https://github.com/binder-examples/requirements  
+#  branch: master
+#
+#sphinx:
+#  config:
+#    html_js_files:
+#      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
