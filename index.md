@@ -1,4 +1,4 @@
-# 🎯 Introduction
+# Introduction
 
 Welcome to the *interactive PID control course** from UT Austin! This isn't just another set of lecture notes—it's a complete **hands-on learning laboratory** where you'll master PID control through **live coding, real-time experiments, and interactive problem-solving**.
 
@@ -38,7 +38,7 @@ Curated resources for deeper exploration and advanced topics.
 
 ---
 
-## 🔥 Ready to begin your fun learning journey?
+## 🔥 Ready to begin your exciting learning journey?
 
 👉 **[Start with the Student Guide](student-guide.md)** 👈
 
