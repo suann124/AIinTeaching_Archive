@@ -4,5 +4,6 @@ chapters:
   - file: student-guide
   - file: pid
   - file: simulation
+  - file: pid_manual
   - file: exercises  
   - file: references
