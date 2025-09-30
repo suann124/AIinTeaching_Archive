@@ -1,6 +1,5 @@
 format: jb-book
 root: index
 chapters:
-  - file: student-guide
   - file: pid_controller
   - file: simulation
