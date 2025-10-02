@@ -2,4 +2,4 @@ format: jb-book
 root: index
 chapters:
   - file: pid_controller
-  - file: simulation
+  - file: pid-interactive
