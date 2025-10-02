@@ -1,9 +1,8 @@
 format: jb-book
 root: index
 chapters:
-  - file: student-guide
-  - file: pid
-  - file: simulation
-  - file: pid_manual
-  - file: exercises  
-  - file: references
+  - file: lecture1
+  - file: lecture2
+  - file: lecture3
+  - file: lecture4
+  - file: lecture5

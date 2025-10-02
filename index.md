@@ -1,47 +1,47 @@
-# Introduction
+# Interactive Control Systems Course
 
-Welcome to the *interactive PID control course** from UT Austin! This isn't just another set of lecture notes—it's a complete **hands-on learning laboratory** where you'll master PID control through **live coding, real-time experiments, and interactive problem-solving**.
+Welcome to the **Interactive Control Systems Course**! This course provides a hands-on approach to learning control theory through interactive Jupyter notebooks.
 
 ## 🎓 What You'll Learn
 
-By the end of this interactive course, you'll be able to:
-- ✅ **Design and implement** discrete-time PID controllers in Python
-- ✅ **Understand intuitively** how P, I, D components affect system behavior  
-- ✅ **Apply professional tuning methods** (Ziegler-Nichols, manual tuning)
-- ✅ **Handle real-world challenges** like saturation, noise, and disturbances
-- ✅ **Analyze performance** with quantitative metrics (rise time, overshoot, settling time)
+By the end of this course, you'll be able to:
+- ✅ **Understand** fundamental control system concepts
+- ✅ **Model** dynamic systems mathematically
+- ✅ **Design and implement** PID controllers in Python
+- ✅ **Tune** controllers using various methods
+- ✅ **Handle** real-world control challenges
 
 ---
 
-## 🗺️ Your Learning Journey
+## 📚 Course Structure
 
-### **🚀 Start Here: [Student Guide](student-guide.md)**
-**Essential first read!** Learn how to use the interactive features, activate live coding, and navigate the experiments. **Don't skip this—it's your key to unlocking the full power of this lab!**
+This course is organized into 5 interactive lectures:
 
-### **📖 [PID Control Theory](pid.md)**
-Deep dive into the theory with **executable examples**. Every concept comes with Python code you can run, modify, and experiment with instantly.
+### **📖 [Lecture 1: Introduction to Control Systems](lecture1.ipynb)**
+Learn the fundamentals of control systems, open-loop vs closed-loop systems, and feedback control.
 
-### **💻 [Interactive Exercises](exercises.md)**
-**The heart of your learning!** Five challenging, hands-on problems where you'll implement everything from scratch. Each exercise builds on the previous ones.
+### **🔢 [Lecture 2: Mathematical Modeling](lecture2.ipynb)**
+Understand how to model dynamic systems using transfer functions and analyze system responses.
 
-### **📚 [References & Further Reading](references.md)**
-Curated resources for deeper exploration and advanced topics.
+### **⚙️ [Lecture 3: Introduction to PID Control](lecture3.ipynb)**
+Dive into PID control theory and implement your first PID controller in Python.
 
----
+### **🎛️ [Lecture 4: PID Tuning Methods](lecture4.ipynb)**
+Learn various tuning methods including Ziegler-Nichols and manual tuning techniques.
 
-## 🏃‍♀️ Quick Start (2 minutes!)
-
-1. **📖 Read the [Student Guide](student-guide.md)** to understand the interactive features
-2. **🚀 Go to [Exercises](exercises.md)** and click the **"Live Code"** button
-3. **⏱️ Wait 30-60 seconds** for the Python kernel to start
-4. **🎉 Start coding!** Type in any code block and press `Shift+Enter` to run
+### **🚀 [Lecture 5: Advanced Topics](lecture5.ipynb)**
+Handle real-world challenges like saturation, noise, and anti-windup techniques.
 
 ---
 
-## 🔥 Ready to begin your exciting learning journey?
+## 🏃‍♀️ Quick Start
 
-👉 **[Start with the Student Guide](student-guide.md)** 👈
+1. **🚀 Click on any lecture** to open the interactive notebook
+2. **⏱️ Wait for the kernel to start** (30-60 seconds first time)
+3. **🎉 Start coding!** Run cells with `Shift+Enter`
 
 ---
 
-*💡 Bonus: You can also download the original PDF version: {download}`PID lecture (PDF) <_static/pid.pdf>`*
+## 🔥 Ready to begin?
+
+👉 **[Start with Lecture 1](lecture1.ipynb)** 👈
