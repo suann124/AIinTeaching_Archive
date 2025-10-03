@@ -1,7 +1,5 @@
 format: jb-book
 root: index
+
 chapters:
-  - file: L4_Firstorder_1
-  - file: L5_Firstorder_2
-  - file: pid_controller
-  - file: simulation
+  - glob: lectures/*
