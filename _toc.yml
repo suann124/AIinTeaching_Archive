@@ -1,5 +1,11 @@
 format: jb-book
 root: index
 
-chapters:
-  - glob: lectures/*
+parts:
+  - caption: Lectures
+    chapters:
+      - glob: lectures/*
+  - caption: Exercises
+    chapters:
+      - file: exercises/first_order_exercise
+      - file: exercises/cruise_control_murray
