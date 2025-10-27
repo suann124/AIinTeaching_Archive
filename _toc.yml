@@ -7,7 +7,8 @@ parts:
       - glob: lectures/*
   - caption: Exercises
     chapters:
-      - file: exercises/homework_wrapper
+      - url: _static/exercises/homework.html
+        title: Interactive Homework
       - file: exercises/first_order_exercise
       - file: exercises/cruise_control_murray
   - caption: MATLAB Scripts
