@@ -20,6 +20,9 @@ html:
   extra_js:
     - _static/chat.js
     - _static/inverted-pendulum.js
+  react_html:
+    - exercises/_static
+
 
 # Execution options
 execute:
