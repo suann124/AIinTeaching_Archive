@@ -7,7 +7,7 @@ parts:
       - glob: lectures/*
   - caption: Exercises
     chapters:
-      - url: _static/exercises/homework.html
+      - url: https://suann124.github.io/AIinTeaching/_static/exercises/homework.html
         title: Interactive Homework
       - file: exercises/first_order_exercise
       - file: exercises/cruise_control_murray
