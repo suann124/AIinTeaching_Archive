@@ -3,6 +3,17 @@ title: "Interactive Control Lab"
 author: "Su Ann Low"
 only_build_toc_files: true
 
+# ignore these paths when building
+exclude_patterns:
+  - _build
+  - Thumbs.db
+  - .DS_Store
+  - "**/.ipynb_checkpoints"
+  - ".venv"
+  - "venv"
+  - "**/site-packages/**"
+
+
 # add or merge these keys
 parse:
   myst_enable_extensions:
@@ -20,8 +31,10 @@ html:
   extra_js:
     - _static/chat.js
     - _static/inverted-pendulum.js
-  react_html:
-    - exercises/_static
+  static_path:
+    - _static
+
+
 
 
 # Execution options

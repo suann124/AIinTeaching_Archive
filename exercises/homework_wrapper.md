@@ -1,3 +1,5 @@
+
 # Interactive Homework
 
-<iframe src="/AIinTeaching/exercises/_static/homework.html" width="100%" height="800px" style="border:none;"></iframe>
+<iframe src="{{ site.baseurl }}/_static/exercises/homework.html"
+        width="100%" height="800px" style="border:none;"></iframe>

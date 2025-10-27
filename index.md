@@ -13,35 +13,4 @@ By the end of this interactive course, you'll be able to:
 
 ---
 
-## 🗺️ Your Learning Journey
-
-### **🚀 Start Here: [Student Guide](student-guide.md)**
-**Essential first read!** Learn how to use the interactive features, activate live coding, and navigate the experiments. **Don't skip this—it's your key to unlocking the full power of this lab!**
-
-### **📖 [PID Control Theory](pid.md)**
-Deep dive into the theory with **executable examples**. Every concept comes with Python code you can run, modify, and experiment with instantly.
-
-### **💻 [Interactive Exercises](exercises.md)**
-**The heart of your learning!** Five challenging, hands-on problems where you'll implement everything from scratch. Each exercise builds on the previous ones.
-
-### **📚 [References & Further Reading](references.md)**
-Curated resources for deeper exploration and advanced topics.
-
----
-
-## 🏃‍♀️ Quick Start (2 minutes!)
-
-1. **📖 Read the [Student Guide](student-guide.md)** to understand the interactive features
-2. **🚀 Go to [Exercises](exercises.md)** and click the **"Live Code"** button
-3. **⏱️ Wait 30-60 seconds** for the Python kernel to start
-4. **🎉 Start coding!** Type in any code block and press `Shift+Enter` to run
-
----
-
-## 🔥 Ready to begin your exciting learning journey?
-
-👉 **[Start with the Student Guide](student-guide.md)** 👈
-
----
-
 *💡 Bonus: You can also download the original PDF version: {download}`PID lecture (PDF) <_static/pid.pdf>`*
