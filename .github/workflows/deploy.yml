@@ -56,12 +56,13 @@ jobs:
 
       - name: Build the book
         run: |
+          cd AIinTeaching
           jupyter-book build . 
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _build/html
+          path: AIinTeaching/_build/html
 
   deploy:
     needs: build
