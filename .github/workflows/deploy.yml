@@ -31,7 +31,7 @@ jobs:
           pip install jupyter-book
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-            - name: Debug workspace structure
+      - name: Debug workspace structure
         run: |
           echo "📁 Current working directory:"
           pwd
@@ -48,7 +48,7 @@ jobs:
           echo
           echo "📂 Contents of exercises/:"
           ls -alh exercises || echo "exercises/ folder missing"
-          
+
       - name: Build the book
         run: |
           jupyter-book build .
