@@ -13,7 +13,6 @@ exclude_patterns:
   - "venv"
   - "**/site-packages/**"
 
-
 # add or merge these keys
 parse:
   myst_enable_extensions:

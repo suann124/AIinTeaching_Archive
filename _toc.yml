@@ -4,7 +4,7 @@ root: index
 parts:
   - caption: Lectures
     chapters:
-      - glob: lectures/*
+      - glob: lectures/*.ipynb
   - caption: Exercises
     chapters:
       - url: https://suann124.github.io/AIinTeaching/_static/exercises/homework.html
