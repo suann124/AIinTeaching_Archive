@@ -49,9 +49,14 @@ jobs:
           echo "📂 Contents of exercises/:"
           ls -alh exercises || echo "exercises/ folder missing"
 
+      - name: Debug hidden lecture directories
+        run: |
+          echo "🔍 Hidden dirs under lectures:"
+          find lectures -type d -name ".*" -print || echo "None found"
+
       - name: Build the book
         run: |
-          jupyter-book build .
+          jupyter-book build . --verbose --keep-going
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
