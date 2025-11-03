@@ -4,7 +4,7 @@ root: index
 parts:
   - caption: Lectures
     chapters:
-      - glob: lectures/*.ipynb
+      - glob: lectures/*
   - caption: Exercises
     chapters:
       - url: https://suann124.github.io/AIinTeaching/_static/exercises/homework.html
@@ -13,4 +13,5 @@ parts:
       - file: exercises/cruise_control_murray
   - caption: MATLAB Scripts
     chapters:
-      - glob: MATLAB/*
+      - file: MATLAB/First_order/Firstorder_MATLAB_scripts.ipynb
+

@@ -12,6 +12,7 @@ exclude_patterns:
   - ".venv"
   - "venv"
   - "**/site-packages/**"
+  
 
 # add or merge these keys
 parse:
