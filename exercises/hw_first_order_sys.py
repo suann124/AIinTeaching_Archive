@@ -174,21 +174,11 @@ def slider_with_number(
     slider_key = f"{key}_slider"
     number_key = f"{key}_number"
 
-    if slider_key not in st.session_state:
-        st.session_state[slider_key] = default
-    if number_key not in st.session_state:
-        st.session_state[number_key] = default
-
     def _sync_from_slider() -> None:
         st.session_state[number_key] = st.session_state[slider_key]
 
     def _sync_from_number() -> None:
         st.session_state[slider_key] = st.session_state[number_key]
-
-    try:
-        display_value = format_str % st.session_state[number_key]
-    except TypeError:
-        display_value = format(st.session_state[number_key], format_str)
 
     slider_col, number_col = st.columns([4, 1], gap="small")
     with slider_col:
@@ -197,7 +187,7 @@ def slider_with_number(
             min_value=min_value,
             max_value=max_value,
             step=step,
-            value=st.session_state[slider_key],
+            value=default,
             key=slider_key,
             on_change=_sync_from_slider,
         )
@@ -208,7 +198,7 @@ def slider_with_number(
             min_value=min_value,
             max_value=max_value,
             step=step,
-            value=st.session_state[number_key],
+            value=default,
             format=format_str,
             key=number_key,
             on_change=_sync_from_number,
