@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="cleanDiagram" name="Velocity Control Clean">
+    <mxGraphModel dx="1426" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="desired" value="Desired velocity" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="60" y="174" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sum1" value="Σ" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;verticalAlign=middle;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="180" y="190" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="controller" value="Controller" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="240" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="engine" value="Engine" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="402" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sum2" value="Σ" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;verticalAlign=middle;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="536" y="190" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="slope" value="Slope of road" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="496" y="100" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="body" value="Body" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="596" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="velocity" value="Velocity" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="696" y="174" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" target="sum1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" parent="1" source="sum1" target="controller" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" style="exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="controller" target="engine" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="411" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a4" style="exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="engine" target="sum2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="516" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5" parent="1" source="sum2" target="body" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" parent="1" source="body" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a7" parent="1" source="slope" target="sum2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eQUvIM8KP-9f-T8bED_H-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="sum1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="210" as="sourcePoint" />
+            <mxPoint x="440" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="290" />
+              <mxPoint x="200" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eQUvIM8KP-9f-T8bED_H-3" value="Throttle" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="331" y="174" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eQUvIM8KP-9f-T8bED_H-4" value="&lt;i&gt;&lt;font face=&quot;Georgia&quot;&gt;F&lt;/font&gt;&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="496" y="174" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
