@@ -64,6 +64,10 @@ sphinx:
   config:
     # Jupyter Book already handles RequireJS where needed; avoid double-including.
     html_js_files: []
+    suppress_warnings: ["mystnb.unknown_mime_type"]
+    nb_remove_code_source: true
+    togglebutton_hint: "Show code"
+    togglebutton_hint_hide: "Hide code"
 
 #repository:
 #  url: https://github.com/binder-examples/requirements  
